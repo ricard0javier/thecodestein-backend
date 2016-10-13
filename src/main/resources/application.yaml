@@ -8,7 +8,7 @@ thecodestein:
   staticResourcesPath: /home/pi/thecodestein-backend/public/
   articlesRelativePath: articles/
   articlesFullPath: ${thecodestein.staticResourcesPath}${thecodestein.articlesRelativePath}
-  contextUrl: http://thecodestein.com/
+  contextUrl: http://www.thecodestein.com/
 
 ---
 spring:
