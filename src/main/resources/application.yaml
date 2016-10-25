@@ -2,13 +2,11 @@ spring:
     resources:
       staticLocations:
         - file:${thecodestein.staticResourcesPath}
-        - file:${thecodestein.articlesPath}
 
 thecodestein:
-  staticResourcesPath: /home/pi/thecodestein-backend/public/
+  staticResourcesPath: /usr/share/www/
   articlesRelativePath: articles/
   articlesFullPath: ${thecodestein.staticResourcesPath}${thecodestein.articlesRelativePath}
-  contextUrl: http://www.thecodestein.com/
 
 ---
 spring:
@@ -17,4 +15,3 @@ spring:
 thecodestein:
   staticResourcesPath: /Users/ricardo/git/thecodestein.com/dist/
   articlesRelativePath: static/
-  contextUrl: http://localhost:8080/
