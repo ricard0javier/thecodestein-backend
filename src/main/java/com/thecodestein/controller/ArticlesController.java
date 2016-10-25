@@ -1,5 +1,6 @@
 package com.thecodestein.controller;
 
+import com.google.common.base.Strings;
 import com.thecodestein.service.FileService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,6 +50,12 @@ public class ArticlesController {
     }
 
     private String getContextPath(HttpServletRequest request) {
+
+        String contextHeader = request.getHeader("X-Forwarded-Context");
+        if (!Strings.isNullOrEmpty(contextHeader)) {
+            log.debug("using context header '{}'='{}'", "X-Forwarded-Context", contextHeader);
+            return contextHeader;
+        }
 
         String port;
 
