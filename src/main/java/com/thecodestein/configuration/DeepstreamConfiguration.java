@@ -14,7 +14,7 @@ import java.net.URISyntaxException;
 @Configuration
 public class DeepstreamConfiguration {
 
-    @Bean
+//    @Bean
     public DeepstreamClient deepstreamClient() throws URISyntaxException {
 
         DeepstreamClient ds = new DeepstreamClient("localhost:6021");
