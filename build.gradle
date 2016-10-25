@@ -8,6 +8,7 @@ version = '1.0'
 
 repositories {
     mavenCentral()
+    jcenter()
 }
 
 mainClassName = 'com.thecodestein.Application'
@@ -18,5 +19,6 @@ dependencies {
     compile "org.projectlombok:lombok:1.16.10"
     compile "com.google.guava:guava:20.0-rc1"
     compile "org.springframework.boot:spring-boot-starter-web:1.4.1.RELEASE"
+    compile 'io.deepstream:deepstream.io-client-java:0.8'
     testCompile "junit:junit:4.11"
 }
